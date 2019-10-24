@@ -1,6 +1,7 @@
 'use strict';
 
 $('.thumbnail').on('click', e => {
-    console.log(e.target);
+    $('.hero').children().remove();
+    $(event.currentTarget).clone().removeClass().appendTo('.hero');
   });
   
