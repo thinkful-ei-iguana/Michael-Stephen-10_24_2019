@@ -10,9 +10,6 @@ $ (function(){
 
     let inputValue = parseInt($(event.currentTarget).find('input[name = "number-choice"]').val());
 
-    //put stuff into js-results
-    //.js-results
-
     const result = [];
 
     for (let i = 1; i <= inputValue; i++) {
@@ -29,9 +26,8 @@ $ (function(){
         result.push($(`<div class="fizz-buzz-item"><span>${i}</span></div>`));
       }
     }
-    console.log(result);
+
     $('.js-results').append(result);
     
-
   });
 });
