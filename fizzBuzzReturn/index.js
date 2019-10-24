@@ -29,9 +29,9 @@ $ (function(){
         result.push($(`<div class="fizz-buzz-item"><span>${i}</span></div>`));
       }
     }
-
-    $('.js-result').append(result);
     console.log(result);
+    $('.js-results').append(result);
+    
 
   });
 });
